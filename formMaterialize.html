@@ -1,0 +1,129 @@
+<!-- 
+	Aluno: Gabriel da Silva Inácio	
+	
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gabriel da Silva Inácio">
+	<title>Materialize Form</title>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+    
+    <style>
+    	input[type=submit], input[type=reset]{
+    		color: white;
+    		font-weight: normal;
+    	}   
+
+    </style>
+            
+</head>
+<body>	
+	<div class="navbar-fixed">
+		<nav>
+		    <div class="nav-wrapper grey darken-4">	   	
+		    	<a href="#" class="brand-logo">Cadastro de Alunos</a>	     
+
+		    	<!-- Botão menu mobile -->
+		    	<a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+	                <i class="material-icons">menu</i>
+	        	</a>
+
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="#">Início</a></li>
+		        <li><a href="#">Opções</a></li>
+		        <li><a href="#">Perfil</a></li>
+		        <li><a href="#">Ajuda</a></li>
+		      </ul>	       
+		    </div>
+	 	</nav>
+	</div>
+	 	
+ 	<!-- Menu Mobile --> 	 	
+	<ul id="mobile-navbar" class="sidenav"> 			 				
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contatos</a></li>	        
+	</ul>
+ 	 
+
+ 	<div class="row container">
+ 		<p class="flow-text">
+ 			<span class="title">Adicionar Alunos</span>
+ 		</p>
+	    <form class="col s12 justify-content-center">
+	     	<div class="row">
+		        <div class="input-field col s6">
+		        	<input placeholder="Informe o nome do aluno" id="first_name" type="text" class="validate">
+		         	<label for="first_name">Nome</label>
+		        </div>
+		        <div class="input-field col s3">
+		        	<input id="data" type="date" class="validate">
+		        	<label for="data">Nascimento</label>
+		        </div>
+		        <div class="browser-default col s3">
+				    <label>Sexo</label>
+					<select class="browser-default">
+						<option value="" disabled selected>== Selecione ==</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+				</div>
+	     	</div>	 
+	     	<div class="row">
+	     		<div class="input-field col s5">
+		        	<input placeholder="Informe o endereço com número" id="endereco" type="text" class="validate">
+		         	<label for="endereco">Endereço</label>
+		        </div>
+		        <div class="input-field col s3">
+		        	<input placeholder="Informe o bairro" id="bairro" type="text" class="validate">
+		         	<label for="bairro">Bairro</label>
+		        </div>
+		        <div class="input-field col s3">
+		        	<input placeholder="Informe o cidade" id="cidade" type="text" class="validate">
+		         	<label for="cidade">Cidade</label>
+		        </div>
+		         <div class="input-field col s1">
+		        	<input placeholder="estado" id="estado" type="text" class="validate">
+		         	<label for="estado">UF</label>
+		        </div>
+	     	</div> 
+	     	<div class="row">
+	     		<div class="input-field col s2">
+		        	<input id="cpf" type="text" class="validate">
+		         	<label for="cpf">CPF</label>
+		        </div>
+		        <div class="input-field col s2">
+		        	<input id="rg" type="text" class="validate">
+		         	<label for="rg">RG</label>
+		        </div>
+		         <div class="input-field col s3">
+		        	<input id="telefone" type="text" class="validate">
+		         	<label for="telefone">Telefone</label>
+		        </div>
+		        <div class="input-field col s5">
+		        	<input placeholder="exemplo@gmail.com" id="email" type="text" class="validate">
+		         	<label for="email">Email</label>
+		        </div>
+	     	</div>   	     	      
+	     	<div class="row">
+	     		<div class="input-field col s5">	     			
+		        	<input id="salvar" type="submit" class="btn waves-effect green darken-1 col s12" value="Salvar">		         	
+		        </div>
+		        <div class="input-field col s5">
+		        	<input id="limpar" type="reset" class="btn waves-effect  amber accent-3 col s12" value="Limpar">		         	
+		        </div>
+	     	</div>
+	    </form>
+	</div>
+        
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

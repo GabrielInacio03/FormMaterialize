@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Formulário HTML com Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cadastro de Alunos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Opções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form action="" method="POST">
+            <div id="main" class="container">
+                <h3 style="border-bottom: 1px solid #ccc">Adicionar Alunos </h3>
+                <div class="row">
+                    <div class="col-12 col-sm-7 col-md-6">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Informe o nome do aluno">
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <label for="dataNasc" class="form-label">Nascimento:</label>
+                        <input type="date" class="form-control" id="dataNasc">
+                    </div>
+                    <div class="col-12 col-sm-2 col-md-3">
+                        <label for="dataNasc" class="form-label">Sexo:</label>
+                        <select class="form-select" aria-label="">
+                            <option selected>== selecione ==</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-5">
+                        <label for="endereco" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Informe o endereço com número">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <label for="bairro" class="form-label">Bairro:</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Informe o bairro">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Informe o nome do aluno">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-1">
+                        <label for="uf" class="form-label">UF:</label>
+                        <input type="text" class="form-control" id="uf" placeholder="Estado ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-2">
+                        <label for="CPF" class="form-label">CPF:</label>
+                        <input type="number" class="form-control" id="CPF">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2">
+                        <label for="RG" class="form-label">RG:</label>
+                        <input type="text" class="form-control" id="RG">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-5">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="text" class="form-control" id="email" placeholder="nome@dominio.com ">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-6 col-sm-4 col-md-3 ">
+                        <button type="button" id="btnSalvar" class="btn btn-success col-12">Salvar</button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <button type="button" id="btnLimpar" class="btn btn-warning col-12">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
